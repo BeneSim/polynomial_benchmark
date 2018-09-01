@@ -25,6 +25,10 @@
         - [Clang 6.0.1](#clang-601-2)
             - [`USE_LAMBDA_XFUNCTION = ON`](#use_lambda_xfunction--on-5)
             - [`USE_LAMBDA_XFUNCTION = OFF`](#use_lambda_xfunction--off-5)
+    - [Armv7-a](#armv7_a)
+        - [GCC 8.1.0](#gcc-810)
+            - [`USE_LAMBDA_XFUNCTION = ON`](#use_lambda_xfunction--on-6)
+            - [`USE_LAMBDA_XFUNCTION = OFF`](#use_lambda_xfunction--off-6)
 - [Contributing](#contributing)
 
 <!-- markdown-toc end -->
@@ -200,6 +204,22 @@ Here are some benchmarks for various CPUs, only the `order = 20` benchmarks will
 [![order 20 native](benchmarks/xeon_w3670/clang_7.0.0/20_native.png)](benchmarks/xeon_w3670/clang_7.0.0/20_native.png)
 [![order 20 xsimd](benchmarks/xeon_w3670/clang_7.0.0/20_xsimd.png)](benchmarks/xeon_w3670/clang_7.0.0/20_xsimd.png)
 [![order 20](benchmarks/xeon_w3670/clang_7.0.0/20.png)](benchmarks/xeon_w3670/clang_7.0.0/20.png)
+
+## Armv7-a (RK3288 - Asus Tinkerboard) 
+### GCC 8.1.0
+#### `USE_LAMBDA_XFUNCTION = ON`
+
+[![lambda order 20 xsimd native](benchmarks/armv7-a/gcc_8.1.0/lambda_20_xsimd_native.png)](benchmarks/armv7-a/gcc_8.1.0/lambda_20_xsimd_native.png)
+[![lambda order 20 native](benchmarks/armv7-a/gcc_8.1.0/lambda_20_native.png)](benchmarks/armv7-a/gcc_8.1.0/lambda_20_native.png)
+[![lambda order 20 xsimd](benchmarks/armv7-a/gcc_8.1.0/lambda_20_xsimd.png)](benchmarks/armv7-a/gcc_8.1.0/lambda_20_xsimd.png)
+[![lambda order 20](benchmarks/armv7-a/gcc_8.1.0/lambda_20.png)](benchmarks/armv7-a/gcc_8.1.0/lambda_20.png)
+
+#### `USE_LAMBDA_XFUNCTION = OFF`
+
+[![order 20 xsimd native](benchmarks/armv7-a/gcc_8.1.0/20_xsimd_native.png)](benchmarks/armv7-a/gcc_8.1.0/20_xsimd_native.png)
+[![order 20 native](benchmarks/armv7-a/gcc_8.1.0/20_native.png)](benchmarks/armv7-a/gcc_8.1.0/20_native.png)
+[![order 20 xsimd](benchmarks/armv7-a/gcc_8.1.0/20_xsimd.png)](benchmarks/armv7-a/gcc_8.1.0/20_xsimd.png)
+[![order 20](benchmarks/armv7-a/gcc_8.1.0/20.png)](benchmarks/armv7-a/gcc_8.1.0/20.png)
 
 # Contributing
 If you'd like to contribute with benchmark results on different CPUs feel free to add a PR. Please make sure to run all combinations of compile options as demonstrated in [Run the Benchmark](#run-the-benchmark).
