@@ -211,14 +211,12 @@ Here are some benchmarks for various CPUs, only the `order = 20` benchmarks will
 
 [![lambda order 20 xsimd native](benchmarks/armv7-a/gcc_8.1.0/lambda_20_xsimd_native.png)](benchmarks/armv7-a/gcc_8.1.0/lambda_20_xsimd_native.png)
 [![lambda order 20 native](benchmarks/armv7-a/gcc_8.1.0/lambda_20_native.png)](benchmarks/armv7-a/gcc_8.1.0/lambda_20_native.png)
-[![lambda order 20 xsimd](benchmarks/armv7-a/gcc_8.1.0/lambda_20_xsimd.png)](benchmarks/armv7-a/gcc_8.1.0/lambda_20_xsimd.png)
 [![lambda order 20](benchmarks/armv7-a/gcc_8.1.0/lambda_20.png)](benchmarks/armv7-a/gcc_8.1.0/lambda_20.png)
 
 #### `USE_LAMBDA_XFUNCTION = OFF`
 
 [![order 20 xsimd native](benchmarks/armv7-a/gcc_8.1.0/20_xsimd_native.png)](benchmarks/armv7-a/gcc_8.1.0/20_xsimd_native.png)
 [![order 20 native](benchmarks/armv7-a/gcc_8.1.0/20_native.png)](benchmarks/armv7-a/gcc_8.1.0/20_native.png)
-[![order 20 xsimd](benchmarks/armv7-a/gcc_8.1.0/20_xsimd.png)](benchmarks/armv7-a/gcc_8.1.0/20_xsimd.png)
 [![order 20](benchmarks/armv7-a/gcc_8.1.0/20.png)](benchmarks/armv7-a/gcc_8.1.0/20.png)
 
 # Contributing
